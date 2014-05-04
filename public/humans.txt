@@ -3,14 +3,13 @@
 
 # TEAM
 
-    Sebastien Guimont -- Lead -- @sguimont
+    <name> -- <role> -- <twitter>
 
 # THANKS
 
-    meanjs.org Team
+    <name>
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Angular JS, Bootstrap, Express, Mongoose
-    Node, MongoDB
+    jQuery, Modernizr
