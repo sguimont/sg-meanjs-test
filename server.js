@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Module dependencies.
+ * Module dependencies. TEST
  */
 var config = require('./config/config'),
 	mongoose = require('mongoose');
