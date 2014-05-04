@@ -5,13 +5,13 @@ var path = require('path'),
 
 module.exports = {
 	app: {
-		title: 'MEAN.JS',
-		description: 'Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js',
-		keywords: 'mongodb, express, angularjs, node.js, mongoose, passport'
+		title: 'Test MEAN.JS',
+		description: 'Test Mean.js Stack',
+		keywords: 'sebastien guimont, test, mongodb, express, angularjs, node.js, mongoose, passport'
 	},
 	root: rootPath,
 	port: process.env.PORT || 3000,
 	templateEngine: 'swig',
-	sessionSecret: 'MEAN',
+	sessionSecret: 'My4Little$ecrets',
 	sessionCollection: 'sessions'
 };
