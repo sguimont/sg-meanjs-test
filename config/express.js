@@ -99,7 +99,15 @@ module.exports = function(db) {
 	// connect flash for flash messages
 	app.use(flash());
 
-	// Use helmet to secure Express headers
+    // Add no-cache
+    app.use(function noCache(req, res, next) {
+        res.header('Cache-Control', 'no-cache, no-store, must-revalidate');
+        res.header('Pragma', 'no-cache');
+        res.header('Expires', 0);
+        next();
+    });
+
+    // Use helmet to secure Express headers
 	app.use(helmet.xframe());
 	app.use(helmet.iexss());
 	app.use(helmet.contentTypeOptions());

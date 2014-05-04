@@ -5,6 +5,10 @@ angular.module('notes').controller('NotesController', ['$scope', '$stateParams',
     function($scope, $stateParams, $location, Authentication, Notes) {
         $scope.authentication = Authentication;
 
+        $scope.sendForm = function() {
+            alert('form valid, sending request...');
+        };
+
         // Create new Note
         $scope.create = function() {
         	// Create new Note object
