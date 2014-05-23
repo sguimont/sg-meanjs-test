@@ -23,6 +23,7 @@
 		"ApplicationConfiguration": true
 	},
 	"predef": [ // Extra globals.
+        "angular",
 		"define",
 		"require",
 		"exports",
