@@ -4,6 +4,7 @@
  * Module dependencies.
  */
 var express = require('express'),
+    cors = require('cors'),
 	morgan = require('morgan'),
 	bodyParser = require('body-parser'),
 	session = require('express-session'),
@@ -115,7 +116,8 @@ module.exports = function(db) {
 	app.disable('x-powered-by');
 	
 	// Setting the app router and static folder
-	app.use(express.static(path.resolve('./public')));
+    app.use(cors());
+    app.use(express.static(path.resolve('./public')));
 
 	// Globbing routing files
 	config.getGlobbedFiles('./app/routes/**/*.js').forEach(function(routePath) {
